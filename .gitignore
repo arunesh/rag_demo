@@ -1,4 +1,6 @@
-student_record.md
+credentials.json
+token.json
+data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
