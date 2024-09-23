@@ -20,5 +20,5 @@ Dataset consists of 267 QnA pairs off the "Codepath" document.
 
 ### Conclusion:
 
-Based on this limited experiment, Claude is significantly better than GPT3.5 for a question-answer LLM role.
+Based on this limited experiment, Claude is significantly better than GPT4 Turbo for a question-answer LLM role.
 Both are quite similar for the LLM-as-a-judge role.
