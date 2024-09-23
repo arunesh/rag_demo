@@ -1,0 +1,78 @@
+0, The output provided does not match the expected output of '53'. The content and context are completely different.
+0, The output provided contains detailed information about the revenue projections in Chart D, while the expected output is simply 'Revenue projections.' The provided output goes beyond the scope of the expected output, making it inaccurate.
+1, The output accurately conveys the main content of the expected output, maintaining the core message and semantic similarity.
+0, The output contains additional information about 'Chart C' and 'lean model', which is not present in the expected output. The key information 'Full financial summary' is missing in the output.
+1, The output accurately conveys the expected information by mentioning 'lean model' as discussed in Chart C.
+0, The output provided additional details about the two charts specifically mentioning Chart A and Chart B, which goes beyond the expected output of just 'Two charts.' Therefore, the output is not accurate as it contains extra information.
+1, The output accurately reflects the expected output by mentioning 'Finance charts' among the appendices listed.
+0, The output provided is incorrect as it states the numerical value as 32 while the expected output is 52. The discrepancy in the numerical value makes the output inaccurate.
+1, The output accurately conveys the same information as the expected output, focusing on the comparison between students enrolled and expenses per student enrolled.
+1, The output accurately captures the essence of the expected output by mentioning 'Base case'. The additional context provided in the output does not significantly deviate from the expected output.
+0, The output provided does not align with the expected output in terms of content. The expected output discusses how companies contribute to regional outcomes through internships, hiring, and funding commitments, which is not addressed in the provided snippet's evaluation of CodePath's strategy.
+0, The output provided does not match the expected output. The expected output mentions partnerships with local corporate consortia and anchor tech employers, while the provided output discusses partnerships within the higher education market involving colleges and universities.
+0, The output provided contains additional information and does not match the expected output in terms of conciseness and accuracy. The expected output is more concise and directly states the number of students without additional context.
+0, The output does not accurately reflect the expected output. The actual number mentioned (103,000) is significantly different from the expected number (32,000). Additionally, the mention of reaching students across the region does not align with the specific focus on GSU students in the expected output.
+1, The output accurately captures the essence of the expected output by listing AI, mobile, and entrepreneurship as specializations without any significant deviation.
+0, The output contains additional information about activating the local CodePath alumni and developer community, which is not present in the expected output. This extra information deviates from the expected content, resulting in an incorrect score.
+0, The output contains additional information about the support provided by the Knight Foundation to CodePath in the Miami metro area, which goes beyond the expected output of just mentioning the Knight Foundation. Therefore, the output is not accurate.
+1, The output accurately conveys the expected information about a 50% time commitment without any significant deviation in meaning.
+0, The output contains additional information 'One RBDD will be assigned to a region' which is not present in the expected output. The core message is not accurately conveyed.
+0, The output provided additional information about the roles of RBDDs and RPMs, which was not present in the expected output. The expected output was more concise and specific.
+0, The output provided contains additional details about the 'flywheel' model, its stakeholders, and the specific focus on Black, Latino/a, Indigenous, or low-income talent within regions, which are not present in the expected output. The focus of the expected output is on creating cascading impacts through leveraging local stakeholders' interests in workforce development and social mobility, which is not fully captured in the provided output.
+1, The output accurately conveys the same information as the expected output, mentioning New York City (NYC) and the DC-Maryland-Virginia metro (DMV) as potential launch regions for CodePath in Spring 2025.
+1, The output accurately represents the expected output with the inclusion of additional context about CodePath's aim to cultivate and employ the mentioned talent.
+1, The output accurately captures the key information from the expected output, which is the percentage of early career talent working within 100 miles of their hometown.
+0, The output contains additional information about CodePath planning to expand over the next five years, which is not present in the expected output. The key information about the eight targeted metropolitan areas is missing in the output.
+1, The output accurately identifies the financial institution as 'JP Morgan Chase Foundation' as per the expected output.
+0, The output does not match the expected output. The provided response focuses on the lack of mention of the foundation associated with MacKenzie Scott, rather than simply stating 'MacKenzie Scott' as the expected output.
+0, The output provided does not contain 'Google' as expected. The list of technology companies listed does not match the expected output.
+1, The output accurately identifies the foundation as the 'Knight Foundation' as expected, despite the inclusion of the word 'One' and the mention of 'philanthropy'. The core information is correctly conveyed.
+1, The output matches the expected output in terms of identifying Ford Motor Company as the company associated with the automotive industry. The semantic similarity is maintained.
+0, The output does not match the expected output. There is a discrepancy of 4 corporate partners between the output and the expected output.
+0, The output provided is incorrect as it mentions CodePath as the philanthropic partner associated with the Ballmer Group, whereas the expected output is Ballmer Group.
+0, The output provided is completely different from the expected output in terms of content. The section title 'Appendix B: CodePath Founding Principles' does not match '2023-24 Philanthropic Partners' at all.
+1, The output correctly identifies Amazon as one of the corporate partners, which matches the expected output. While the other partners listed differ, the presence of Amazon aligns with the expected information.
+0, The output does not match the expected output in terms of content. The expected output specifically mentions '2023-24 Corporate Partners' while the output describes the absence of the document excerpt title and lists appendices instead.
+0, The output provided, Florida State University, is incorrect as it does not match the expected output, University of Florida - Gainesville. The two universities are different and located in different cities in Florida.
+0, The output contains multiple universities located in New York, while the expected output specifies only 'New York University'. The output is not accurate as it includes additional universities beyond the expected one.
+1, The output accurately provides the name of the university in Texas that is located in College Station as Texas A&M University - College Station, matching the expected output.
+1, The output accurately conveys the information by correctly identifying the University of California - Berkeley as the university located in California with 'Berkeley' in its name.
+0, The output provided is incorrect as it states 91 universities instead of the expected 46. The discrepancy in numbers is significant and cannot be considered a trivial inaccuracy.
+0, The output provided does not match the expected output in terms of content. The output talks about higher education institutions like universities and colleges, while the expected output is about University, Corporate, and Philanthropic Partners, which are different topics.
+0, The output provided is incorrect as it states Columbia University as the Ivy League institution, while the expected output is Dartmouth College.
+1, The output accurately identifies and lists the 7 California State Universities mentioned in the document, matching the expected count of seven.
+0, The output does not match the expected output. Arizona State University is mentioned instead of Alabama A&M University, indicating a clear discrepancy.
+0, The output does not match the expected output in terms of the title of Appendix G. The expected output includes the year 2023-24, which is missing in the provided output.
+0, The output provided does not match the expected output. The expected output is '84%', while the provided output states that the exact percentage is not specified, hence not providing an accurate answer.
+0, The output provided does not accurately reflect the expected output. The revenue growth percentages are mentioned instead of actual revenue figures, leading to a significant deviation from the expected information.
+1, The output accurately provides the expected value of $0.05, despite minor differences in wording.
+1, The output accurately captures the key information from the expected output, which is the target percentage of 60% for renewed or upgraded philanthropy by 2028.
+1, The output accurately conveys the essential information from the expected output by stating the amount of MacKenzie Scott's contribution to CodePath as $15 million.
+0, The output provided includes additional information beyond what was expected, such as connecting donors to students through activities and building relationships with venture capital firms. This deviates from the expected output of creating regional advisory boards only.
+1, The output accurately captures the expected annual growth rate of total philanthropic revenue for CodePath through 2026 as 30-40% annually, which matches the expected output of 30-40%.
+0, The output provided contains additional information beyond what is expected. It does not match the expected output in terms of conciseness and focus on the main point.
+1, The output matches the expected output in terms of the key information provided, which is the amount of $18,401,500. Trivial differences like additional text do not affect the overall accuracy.
+1, The output matches the expected output in terms of the total projected philanthropic revenue for CodePath from 2024 to 2028, showing semantic similarity.
+0, The output does not accurately reflect the expected output. The provided output lacks the percentage increase information and does not match the expected output in terms of format and content.
+0, The output contains additional information about other individual donors and their contributions, which is not present in the expected output. This extra information makes the output inaccurate compared to the expected output.
+1, The output accurately conveys the amount of the grant as $2.5 million, which is semantically equivalent to $2.5M in the expected output.
+0, The output provided describes three main philanthropic investor segments, while the expected output states four segments. Therefore, the output is incorrect as it does not match the expected output in terms of the number of segments mentioned.
+1, The output accurately conveys the expected information that over 40% of CodePath's philanthropic revenues came from national corporate foundations.
+1, The output matches the expected output in terms of the average salary of graduates who landed full-time tech jobs after completing CodePath's program being $92,000.
+0, The output provided states that CodePath has served 20,344 unique students, which is significantly different from the expected output of 26,000. The discrepancy in numbers makes the output incorrect.
+0, The output does not provide the calculation or percentage of CodePath's total organizational revenues that philanthropic revenue represented in 2023, so it does not match the expected output of 90%.
+1, The output accurately represents the expected output in a slightly expanded form, providing the same information about the philanthropic revenue for CodePath in 2023.
+1, The output accurately captures the expected range of 50%-100% increase in philanthropic revenue per year over the last three years.
+0, The output provided does not match the expected output. The content and focus of the two texts are different. The expected output emphasizes prioritizing experienced hires, investing in flagship university partnerships, and bolstering data systems, which are not mentioned in the provided output.
+0, The output provided an estimate of approximately 15.36% for higher education revenue as a percentage of total revenue in 2028, which significantly deviates from the expected output of 'Never more than 7%'.
+0, The output provided does not match the expected output in terms of the monetary value mentioned. The expected output is $5.1M while the output mentions over $25M, which is significantly different.
+1, The output accurately conveys the expected cost of higher ed sales per $1 of earned revenue in 2024 exceeding $4, which aligns with the expected output of 'Exceed $4.'
+1, The output accurately captures the key information from the expected output, mentioning the growth of the higher ed account team at CodePath to 7 FTEs by 2028.
+0, The output provided is significantly different from the expected output. The number mentioned in the output is 45,000, while the expected output is 24,340, showing a clear discrepancy in the information.
+0, The output states that the cost per student for CodePath Partnered+ is approximately $200 per student per year, which is significantly different from the expected output of $206. The discrepancy in the values makes the output inaccurate.
+0, The output is significantly different from the expected output in terms of the projected average deal size per school. The output states $44.5K, while the expected output is more than $400,000, indicating a substantial discrepancy in the values.
+0, The output does not provide the specific number of higher education institutions involved in the collaboration, which is the key information expected in the output. The number '58' is missing in the provided output.
+0, The output states a revenue increase of $2.6M, which is different from the expected revenue of $2.5M. The discrepancy in the values makes the output inaccurate.
+1, The output accurately conveys the expected information about the initial pricing test being $75.
+1, The output accurately represents the expected output in a slightly more detailed form by specifying the revenue as $5.1 million instead of using the abbreviation $5.1M. The essential information is preserved, making the response correct.
+1, The output accurately conveys the same information as the expected output, despite minor differences in wording.

@@ -83,6 +83,15 @@ def custom_query_logic_oai(retriever, question):
     print("Result = ", result)
     return result
 
+def remove_json_codeblockers(content):
+    # Remove potential JSON code block markers
+    content = content.strip()
+    if content.startswith('```'):
+        content = content.split('\n', 1)[-1]
+    if content.endswith('```'):
+        content = content.rsplit('\n', 1)[0]
+    content = content.strip()
+    return content
 
 def custom_query_logic_claude(retriever, question):
     # Retrieve relevant documents
@@ -152,7 +161,9 @@ def oai_llm_evaluation(output, expected_output):
         temperature=0.2
     )
     
+ 
     evaluation = response.choices[0].message.content
+    evaluation = remove_json_codeblockers(evaluation)
     result = eval(evaluation)  # Convert the JSON string to a Python dictionary
     
     # Debug printout
@@ -264,9 +275,9 @@ def run_experiment_with_custom_query_logic(experiment_name, custom_query_logic_f
 #        retriever, oai_llm_evaluation, "oai_query_claude_judge_2.csv")
 
 # Claude as query and judge:
-run_experiment_with_custom_query_logic("Experiment_21_claude_query_and_judge", query_rag_claude_with_lf,
-        retriever, claude_llm_evaluation, "claude_query_and_judge_2.csv")
+#run_experiment_with_custom_query_logic("Experiment_21_claude_query_and_judge", query_rag_claude_with_lf,
+#        retriever, claude_llm_evaluation, "claude_query_and_judge_2.csv")
 
 # GPT  as query and judge:
-#run_experiment_with_custom_query_logic("Experiment_22_oai_query_and_judge", query_rag_oai_with_lf,
-#       retriever, oai_llm_evaluation, "oai_query_and_judge_2.csv")
+run_experiment_with_custom_query_logic("Experiment_22_oai_query_and_judge", query_rag_oai_with_lf,
+       retriever, oai_llm_evaluation, "oai_query_and_judge_3.csv")
