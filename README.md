@@ -13,7 +13,7 @@ Dataset consists of 267 QnA pairs off the "Codepath" document.
 
 - With Claude as query LLM and judge, accuracy: 68 percent.
 
-- With GPT4 Turbo as query LLM and Claude as judge, accuracy: 
+- With GPT4 Turbo as query LLM and Claude as judge, accuracy: 40.04 percent.
 
 - With GPT4 Turbo as query LLM and judge, accuracy: 41.1 percent.
 
