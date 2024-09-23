@@ -24,6 +24,8 @@ oai_client = OpenAI()
 
 langfuse = Langfuse()
 
+GPT_35TURBO = "gpt-3.5-turbo"
+GPT_4TURBO = "gpt-4-turbo"
 
 # Anthropic client
 claude_client = anthropic.Anthropic()
@@ -39,7 +41,7 @@ index = VectorStoreIndex.from_documents(docs)
 retriever = index.as_retriever(retrieval_mode='similarity', k=3)
 
 # Define your query
-query = "What years does the strategic plan cover?"
+# query = "What years does the strategic plan cover?"
 
 
 def print_info(relevant_docs):
@@ -55,7 +57,7 @@ def print_info(relevant_docs):
 
 def custom_query_logic_oai(retriever, question):
     # Retrieve relevant documents
-    relevant_docs = retriever.retrieve(query)
+    relevant_docs = retriever.retrieve(question)
     # For debug:
     # print_info(relevant_docs)
     snippet = " \n ".join([x.text for x in relevant_docs])
@@ -69,7 +71,7 @@ def custom_query_logic_oai(retriever, question):
     # print("Snippet = ", snippet)
 
     response = oai_client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=GPT_4TURBO,
         messages=[
             {"role": "system", "content": "You are an AI assistant tasked answering questions accurately based on the given context."},
             {"role": "user", "content": query_prompt}
@@ -84,7 +86,7 @@ def custom_query_logic_oai(retriever, question):
 
 def custom_query_logic_claude(retriever, question):
     # Retrieve relevant documents
-    relevant_docs = retriever.retrieve(query)
+    relevant_docs = retriever.retrieve(question)
     # For Debug:
     # print_info(relevant_docs)
     snippet = " \n ".join([x.text for x in relevant_docs])
@@ -118,9 +120,9 @@ def custom_query_logic_claude(retriever, question):
     print("Result = ", result)
     return result
 
-custom_query_logic_oai(retriever, query)
+#custom_query_logic_oai(retriever, query)
 
-custom_query_logic_claude(retriever, query)
+#custom_query_logic_claude(retriever, query)
 
 def oai_llm_evaluation(output, expected_output):  
     prompt = f"""
@@ -214,7 +216,7 @@ def query_rag_oai_with_lf(retriever, input):
     generationStartTime = datetime.now()
     result = custom_query_logic_oai(retriever, input)
     langfuse_generation = langfuse.generation(
-        name="strategic-plan-qa-oai-3",
+        name="strategic-plan-qa-oai-4",
         input=input,
         output=result,
         model="gpt-3.5-turbo",
@@ -227,7 +229,7 @@ def query_rag_claude_with_lf(retriever, input):
     generationStartTime = datetime.now()
     result = custom_query_logic_oai(retriever, input)
     langfuse_generation = langfuse.generation(
-        name="strategic-plan-qa-claude-3",
+        name="strategic-plan-qa-claude-4",
         input=input,
         output=result,
         model="claude-3-5-sonnet-20240620",
@@ -253,18 +255,18 @@ def run_experiment_with_custom_query_logic(experiment_name, custom_query_logic_f
     file.close()
 
 
-# GPT3.5 for query and Claude as judge:
-#run_experiment_with_custom_query_logic("Experiment_10_oai_query_claude_judge", query_rag_oai_with_lf,
-#        retriever, claude_llm_evaluation, "claude_query_oai_judge_1.csv")
+# GPT for query and Claude as judge:
+#run_experiment_with_custom_query_logic("Experiment_20_oai_query_claude_judge", query_rag_oai_with_lf,
+#        retriever, claude_llm_evaluation, "claude_query_oai_judge_2.csv")
 
 # Claude for query and GPR3.5 as judge:
-#run_experiment_with_custom_query_logic("Experiment_10_claude_query_oai_judge", query_rag_claude_with_lf,
-#         retriever, oai_llm_evaluation, "oai_query_claude_judge_1.csv")
+#run_experiment_with_custom_query_logic("Experiment_20_claude_query_oai_judge", query_rag_claude_with_lf,
+#        retriever, oai_llm_evaluation, "oai_query_claude_judge_2.csv")
 
 # Claude as query and judge:
-run_experiment_with_custom_query_logic("Experiment_11_claude_query_and_judge", query_rag_claude_with_lf,
-        retriever, claude_llm_evaluation, "claude_query_and_judge_1.csv")
+run_experiment_with_custom_query_logic("Experiment_21_claude_query_and_judge", query_rag_claude_with_lf,
+        retriever, claude_llm_evaluation, "claude_query_and_judge_2.csv")
 
-# GPT3.5 as query and judge:
-#run_experiment_with_custom_query_logic("Experiment_12_oai_query_and_judge", query_rag_oai_with_lf,
-#       retriever, oai_llm_evaluation, "oai_query_and_judge_1.csv")
+# GPT  as query and judge:
+#run_experiment_with_custom_query_logic("Experiment_22_oai_query_and_judge", query_rag_oai_with_lf,
+#       retriever, oai_llm_evaluation, "oai_query_and_judge_2.csv")

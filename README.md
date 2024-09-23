@@ -1,7 +1,9 @@
 # Week 2 lab work
 
 
-### Milestone 8 work
+### Milestone 8 exploration results 
+
+Dataset: Codepath strategic planning document, 54 pages.
 
 Used OpenAI GPT 3.5 Turbo and Claude 3.5 Sonnet as LLMs. Alternated between them as query LLM and LLM-as-a-judge.
 
@@ -23,5 +25,5 @@ With GPT3.5 as query LLM and judge:
 
 ### Conclusion:
 
-Based on this limited experiment, GPT3.5 is worse off than Claude for a query LLM purpose, but quite similar to Claude for the
-LLM-as-a-judge role.
+Based on this limited experiment, Claude is better than GPT3.5 for a question-answer LLM role.
+Both are quite similar for the LLM-as-a-judge role.
