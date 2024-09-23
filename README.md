@@ -5,25 +5,20 @@
 
 Dataset: Codepath strategic planning document, 54 pages.
 
-Used OpenAI GPT 3.5 Turbo and Claude 3.5 Sonnet as LLMs. Alternated between them as query LLM and LLM-as-a-judge.
+Used OpenAI GPT 4 Turbo and Claude 3.5 Sonnet as LLMs. Alternated between them as query LLM and LLM-as-a-judge.
 
 Dataset consists of 267 QnA pairs off the "Codepath" document. 
 
-With GPT3.5 as query LLM and Claude as judge:
-248 answers with a zero score. 19 with a 1 score. Giving an accuracy of 7.1 percent.
+- With Claude as query LLM and GPT4 Turbo as judge, accuracy: 68.1 percent.
 
-With Claude as query LLM and GPT3.5 as judge: 
-231 Answer with zero score. 36 with a 1 score. Giving an accuracy of 13.4 percent.
+- With Claude as query LLM and judge, accuracy: 68 percent.
 
+- With GPT4 Turbo as query LLM and Claude as judge, accuracy: 
 
-With Claude as query LLM and judge:
-230 answers with zero score, 37 with a 1 score. Giving an accuracy of 13.8 percent.
-
-With GPT3.5 as query LLM and judge:
-250 answers with a zero score. 17 with a 1 score. Giving an accuracy of 6.3 percent.
+- With GPT4 Turbo as query LLM and judge, accuracy: 41.1 percent.
 
 
 ### Conclusion:
 
-Based on this limited experiment, Claude is better than GPT3.5 for a question-answer LLM role.
+Based on this limited experiment, Claude is significantly better than GPT3.5 for a question-answer LLM role.
 Both are quite similar for the LLM-as-a-judge role.

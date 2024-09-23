@@ -227,7 +227,7 @@ def query_rag_oai_with_lf(retriever, input):
     generationStartTime = datetime.now()
     result = custom_query_logic_oai(retriever, input)
     langfuse_generation = langfuse.generation(
-        name="strategic-plan-qa-oai-4",
+        name="strategic-plan-qa-oai-5",
         input=input,
         output=result,
         model="gpt-3.5-turbo",
@@ -240,7 +240,7 @@ def query_rag_claude_with_lf(retriever, input):
     generationStartTime = datetime.now()
     result = custom_query_logic_oai(retriever, input)
     langfuse_generation = langfuse.generation(
-        name="strategic-plan-qa-claude-4",
+        name="strategic-plan-qa-claude-5",
         input=input,
         output=result,
         model="claude-3-5-sonnet-20240620",
@@ -271,13 +271,13 @@ def run_experiment_with_custom_query_logic(experiment_name, custom_query_logic_f
 #        retriever, claude_llm_evaluation, "claude_query_oai_judge_2.csv")
 
 # Claude for query and GPR3.5 as judge:
-#run_experiment_with_custom_query_logic("Experiment_20_claude_query_oai_judge", query_rag_claude_with_lf,
-#        retriever, oai_llm_evaluation, "oai_query_claude_judge_2.csv")
+run_experiment_with_custom_query_logic("Experiment_20_claude_query_oai_judge", query_rag_claude_with_lf,
+        retriever, oai_llm_evaluation, "oai_query_claude_judge_3.csv")
 
 # Claude as query and judge:
 #run_experiment_with_custom_query_logic("Experiment_21_claude_query_and_judge", query_rag_claude_with_lf,
-#        retriever, claude_llm_evaluation, "claude_query_and_judge_2.csv")
+#        retriever, claude_llm_evaluation, "claude_query_and_judge_3.csv")
 
 # GPT  as query and judge:
-run_experiment_with_custom_query_logic("Experiment_22_oai_query_and_judge", query_rag_oai_with_lf,
-       retriever, oai_llm_evaluation, "oai_query_and_judge_3.csv")
+#run_experiment_with_custom_query_logic("Experiment_22_oai_query_and_judge", query_rag_oai_with_lf,
+#       retriever, oai_llm_evaluation, "oai_query_and_judge_3.csv")
