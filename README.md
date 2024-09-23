@@ -22,3 +22,13 @@ Dataset consists of 267 QnA pairs off the "Codepath" document.
 
 Based on this limited experiment, Claude is significantly better than GPT4 Turbo for a question-answer LLM role.
 Both are quite similar for the LLM-as-a-judge role.
+
+- Claude: https://www.anthropic.com/news/claude-3-5-sonnet
+   - GPQA benchmark: 59%
+   - DROP benchmark: 80.7%
+
+- GPT4-Turbo and others:  https://github.com/openai/simple-evals?tab=readme-ov-file#benchmark-results
+    - GPQA benchmark: 49%
+    - DROP benchmark: 86%
+
+
